@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Serie práctica - Desarrollo Web</title>
+        <script src="../p5.js"></script>
+        <script src="../addons/p5.sound.min.js"></script>
+        <script src="sketch.js"></script>
+        <style text="text/css">
+             .menu .btn{
+                display:table-header-group;
+                padding: 15px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 15px;
+                border: 0px;
+                margin-left: 15px;
+            }
+            .menu, .menu ul{
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            
+            .menu-tomato, .menu-tomato .btn{
+                background-color: Tomato;
+                color: #FFF;
+            }
+            .menu-tomato .btn:hover{
+                background-color: #fe9988;
+                color: #fff;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <main>
+            <tr>
+                <td>
+                    <div class="menu-wrapper menu-tomato">
+                        <ul class="menu">
+                            <button type="button" class="btn" onclick="generar()">Generar gráfica</button>
+                            <button type="button" class="btn" onclick="descender()">Ordenar descendentemente</button>
+                            <button type="button" class="btn" onclick="ascender()">Ordenar ascendentemente</button>
+                            <button type="button" class="btn" onclick="maxNum()">Num. máximo </button>
+                            <button type="button" class="btn" onclick="minNum()">Num. mínimo </button>
+                        </ul>
+                    </div>
+                </td>
+        </main>
+    </body>
+</html>
